@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Security Awareness Quiz</title><link rel="stylesheet" href="/static/css/style.css"></head>
+<body><header><div><h1>Security Awareness Quiz</h1><p>30 questions • educational score only</p></div><nav><a href="/dashboard">Dashboard</a><a href="/awareness">Awareness Center</a></nav></header>
+<main><form id="quiz"></form><button class="btn" onclick="submitQuiz(event)">Submit Quiz</button><section id="result" class="panel"></section></main>
+<script>
+let qs=[];
+async function load(){qs=await (await fetch("/api/quiz")).json(); const f=document.querySelector("#quiz"); qs.forEach(q=>{f.innerHTML+=`<section class="panel"><h3>${q.id}. ${esc(q.question)}</h3>${q.options.map((o,i)=>`<label class="option"><input type="radio" name="q${q.id}" value="${i}"> ${esc(o)}</label>`).join("")}</section>`})}
+async function submitQuiz(e){e.preventDefault(); const answers={}; qs.forEach(q=>{const x=document.querySelector(`input[name=q${q.id}]:checked`);if(x)answers[q.id]=Number(x.value)}); const r=await fetch("/api/quiz/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({answers})});const d=await r.json();document.querySelector("#result").innerHTML=`<h2>Score: ${d.score}/100</h2><p>${esc(d.label)}</p><h3>Category Scores</h3><pre>${esc(JSON.stringify(d.category_scores,null,2))}</pre><h3>Learning Recommendations</h3><pre>${esc(JSON.stringify(d.recommendations,null,2))}</pre>`;window.scrollTo(0,document.body.scrollHeight)}
+function esc(x){return String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));}load();
+</script></body></html>

@@ -1,0 +1,210 @@
+{
+  "Phishing Awareness": {
+    "what": "Messages designed to manipulate recipients into unsafe actions.",
+    "why": "Phishing can lead to credential theft, fraud, or malware delivery.",
+    "warning": [
+      "Unexpected sender",
+      "Urgency",
+      "Credential request",
+      "Unexpected attachment/link",
+      "Payment request",
+      "Impersonation",
+      "Unexpected QR code"
+    ],
+    "safe": [
+      "Verify independently",
+      "Use trusted bookmarks",
+      "Report suspicious messages",
+      "Do not disclose credentials"
+    ]
+  },
+  "Password Security": {
+    "what": "Practices that protect authentication secrets.",
+    "why": "Password reuse can let one compromised credential affect multiple accounts.",
+    "warning": [
+      "Reuse",
+      "Short passwords",
+      "Shared credentials"
+    ],
+    "safe": [
+      "Use unique long passwords",
+      "Use a password manager",
+      "Never share credentials"
+    ]
+  },
+  "MFA": {
+    "what": "Multi-factor authentication uses more than one factor.",
+    "why": "It adds protection beyond a password.",
+    "warning": [
+      "Unexpected MFA prompts",
+      "Requests for codes"
+    ],
+    "safe": [
+      "Enable MFA",
+      "Deny unexpected prompts",
+      "Prefer phishing-resistant methods when available"
+    ]
+  },
+  "Social Engineering": {
+    "what": "Manipulation of people rather than only technical systems.",
+    "why": "Attackers may exploit trust, urgency, authority, or fear.",
+    "warning": [
+      "Impersonation",
+      "Urgency",
+      "Secrecy requests"
+    ],
+    "safe": [
+      "Pause",
+      "Verify identity",
+      "Use approved channels"
+    ]
+  },
+  "Safe Browsing": {
+    "what": "Defensive habits for web use.",
+    "why": "Web content can expose users to phishing, fraud, and unsafe downloads.",
+    "warning": [
+      "Suspicious domains",
+      "Unexpected login pages",
+      "Untrusted downloads"
+    ],
+    "safe": [
+      "Use official sites",
+      "Keep browsers updated",
+      "Do not bypass warnings"
+    ]
+  },
+  "Secure Wi-Fi": {
+    "what": "Safe use of wireless networks.",
+    "why": "Untrusted networks can increase exposure.",
+    "warning": [
+      "Unknown open networks",
+      "Unexpected certificates"
+    ],
+    "safe": [
+      "Prefer trusted networks",
+      "Use encrypted services",
+      "Avoid sensitive actions on unknown networks"
+    ]
+  },
+  "Software Updates": {
+    "what": "Keeping operating systems and applications current.",
+    "why": "Updates can address known vulnerabilities.",
+    "warning": [
+      "Unsupported software",
+      "Repeated update prompts ignored"
+    ],
+    "safe": [
+      "Patch regularly",
+      "Use supported versions",
+      "Track critical updates"
+    ]
+  },
+  "Ransomware Awareness": {
+    "what": "Understanding ransomware impacts and prevention.",
+    "why": "Ransomware can disrupt operations and expose data.",
+    "warning": [
+      "Unexpected file changes",
+      "Unusual access events"
+    ],
+    "safe": [
+      "Maintain tested backups",
+      "Patch",
+      "Use least privilege",
+      "Segment networks",
+      "Prepare incident response"
+    ]
+  },
+  "USB / Removable Media Safety": {
+    "what": "Safe handling of removable storage.",
+    "why": "Unknown media can introduce security risk.",
+    "warning": [
+      "Unknown USB devices",
+      "Unexpected files"
+    ],
+    "safe": [
+      "Use approved media",
+      "Scan according to policy",
+      "Do not open unexpected files"
+    ]
+  },
+  "Data Privacy": {
+    "what": "Protecting personal and sensitive information.",
+    "why": "Unnecessary data can increase impact if exposed.",
+    "warning": [
+      "Oversharing",
+      "Public links"
+    ],
+    "safe": [
+      "Minimize data",
+      "Restrict access",
+      "Follow retention rules"
+    ]
+  },
+  "Mobile Security": {
+    "what": "Defensive practices for phones/tablets.",
+    "why": "Mobile devices contain credentials and sensitive data.",
+    "warning": [
+      "Unknown apps",
+      "Excessive permissions"
+    ],
+    "safe": [
+      "Use trusted app stores",
+      "Review permissions",
+      "Keep updates enabled",
+      "Use screen lock"
+    ]
+  },
+  "Remote Work Security": {
+    "what": "Security practices outside the office.",
+    "why": "Remote environments may have less controlled networks/devices.",
+    "warning": [
+      "Untrusted networks",
+      "Unmanaged devices"
+    ],
+    "safe": [
+      "Use approved devices",
+      "Secure Wi-Fi",
+      "Follow access policies"
+    ]
+  },
+  "Cloud Account Security": {
+    "what": "Protecting cloud identities and services.",
+    "why": "Cloud accounts can provide access to significant resources.",
+    "warning": [
+      "Unexpected sign-ins",
+      "Permission changes"
+    ],
+    "safe": [
+      "Use MFA",
+      "Review sessions",
+      "Apply least privilege"
+    ]
+  },
+  "Incident Reporting": {
+    "what": "Promptly communicating suspected security events.",
+    "why": "Early reporting supports investigation and response.",
+    "warning": [
+      "Unexpected account activity",
+      "Suspicious messages/files"
+    ],
+    "safe": [
+      "Report through approved channels",
+      "Preserve relevant evidence",
+      "Follow response guidance"
+    ]
+  },
+  "AI-Enabled Scam Awareness": {
+    "what": "Recognizing convincing scams assisted by AI.",
+    "why": "AI can increase the quality and scale of deceptive content.",
+    "warning": [
+      "Highly polished unexpected messages",
+      "Voice/video impersonation",
+      "Urgent requests"
+    ],
+    "safe": [
+      "Verify through an independent channel",
+      "Use approval processes",
+      "Do not rely on appearance alone"
+    ]
+  }
+}

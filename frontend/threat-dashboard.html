@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><title>SOC Dashboard</title><link rel="stylesheet" href="/static/css/style.css"></head>
+<body><header><div><h1>SOC Threat Dashboard</h1><p>Observation ≠ Indicator ≠ Alert ≠ Threat ≠ Incident</p></div><nav><a href="/">Home</a><a href="/awareness">Awareness</a><a href="/quiz">Quiz</a></nav></header>
+<main>
+<section id="cards" class="cards"></section>
+<section class="panel"><h2>IOC Search</h2><div class="search"><input id="ioc" placeholder="198.51.100.25 or login-check.invalid"><button onclick="searchIOC()">Analyze locally</button></div><pre id="iocResult"></pre></section>
+<section class="grid">
+<div class="panel"><h2>Threats by Severity</h2><div id="severityChart" class="bars"></div></div>
+<div class="panel"><h2>Threats by Category</h2><div id="categoryChart" class="bars"></div></div>
+<div class="panel"><h2>IOC Type Distribution</h2><div id="indicator_typeChart" class="bars"></div></div>
+<div class="panel"><h2>Threat Status</h2><div id="statusChart" class="bars"></div></div>
+</section>
+<section class="panel"><h2>Recent Threats</h2><div class="filters"><select id="severityFilter"><option value="">All severities</option><option>CRITICAL</option><option>HIGH</option><option>MEDIUM</option><option>LOW</option><option>INFORMATIONAL</option></select><select id="categoryFilter"><option value="">All categories</option></select><button onclick="loadThreats()">Filter</button><button onclick="generateAlerts()">Generate alerts</button></div>
+<div class="tablewrap"><table><thead><tr><th>ID</th><th>Name</th><th>Category</th><th>Indicator</th><th>Severity</th><th>Risk</th><th>Confidence</th><th>Status</th></tr></thead><tbody id="threatRows"></tbody></table></div></section>
+</main><script src="/static/js/dashboard.js"></script></body></html>

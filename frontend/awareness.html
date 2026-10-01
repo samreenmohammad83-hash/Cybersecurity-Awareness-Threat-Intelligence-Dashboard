@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Awareness Center</title><link rel="stylesheet" href="/static/css/style.css"></head>
+<body><header><div><h1>Cybersecurity Awareness Center</h1><p>Learn • Verify • Report</p></div><nav><a href="/dashboard">SOC Dashboard</a><a href="/quiz">Quiz</a></nav></header>
+<main><div id="modules" class="grid"></div></main>
+<script>
+async function load(){const d=await (await fetch("/api/awareness/modules")).json(); const root=document.querySelector("#modules");
+for(const [name,m] of Object.entries(d)){root.innerHTML+=`<section class="panel"><h2>${esc(name)}</h2><p><b>What is it?</b> ${esc(m.what)}</p><p><b>Why does it matter?</b> ${esc(m.why)}</p><h3>Warning signs</h3><ul>${m.warning.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><h3>Safe practices</h3><ul>${m.safe.map(x=>`<li>${esc(x)}</li>`).join("")}</ul><p><b>If something happens:</b> stop, avoid further interaction, preserve relevant information, and report through the approved security channel.</p></section>`}}
+function esc(x){return String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));} load();
+</script></body></html>

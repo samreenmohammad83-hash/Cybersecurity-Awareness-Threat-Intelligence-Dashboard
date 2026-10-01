@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "category": "Phishing",
+    "question": "You receive an unexpected message asking you to urgently verify your password. What should you do?",
+    "options": [
+      "Click immediately",
+      "Reply with the password",
+      "Verify through an official trusted channel",
+      "Forward credentials"
+    ],
+    "correct_index": 2,
+    "explanation": "Urgent credential requests should be verified through a trusted channel."
+  },
+  {
+    "id": 2,
+    "category": "Passwords",
+    "question": "Which practice reduces password-reuse risk?",
+    "options": [
+      "Use one password everywhere",
+      "Use unique passwords",
+      "Share passwords with coworkers",
+      "Shorten passwords"
+    ],
+    "correct_index": 1,
+    "explanation": "Unique passwords limit the impact of a reused credential."
+  },
+  {
+    "id": 3,
+    "category": "MFA",
+    "question": "What does MFA add to authentication?",
+    "options": [
+      "A second independent factor",
+      "A public password",
+      "A backup browser",
+      "A faster login"
+    ],
+    "correct_index": 0,
+    "explanation": "MFA adds another authentication factor."
+  },
+  {
+    "id": 4,
+    "category": "Social Engineering",
+    "question": "Which is a common social-engineering warning sign?",
+    "options": [
+      "Calm routine notice",
+      "Unexpected urgency",
+      "Known internal process",
+      "Scheduled maintenance"
+    ],
+    "correct_index": 1,
+    "explanation": "Urgency is commonly used to pressure people into unsafe actions."
+  },
+  {
+    "id": 5,
+    "category": "Safe Browsing",
+    "question": "What is safest when a link seems suspicious?",
+    "options": [
+      "Open it to investigate",
+      "Use an official site/bookmark instead",
+      "Disable security controls",
+      "Forward it"
+    ],
+    "correct_index": 1,
+    "explanation": "Navigate through a trusted official route rather than the suspicious link."
+  },
+  {
+    "id": 6,
+    "category": "Ransomware",
+    "question": "Which control helps recovery from ransomware?",
+    "options": [
+      "Tested offline/isolated backups",
+      "Password reuse",
+      "Disabling updates",
+      "Sharing admin accounts"
+    ],
+    "correct_index": 0,
+    "explanation": "Reliable backups support recovery."
+  },
+  {
+    "id": 7,
+    "category": "Privacy",
+    "question": "What is data minimization?",
+    "options": [
+      "Collecting only necessary data",
+      "Publishing all data",
+      "Keeping passwords in chat",
+      "Ignoring retention"
+    ],
+    "correct_index": 0,
+    "explanation": "Data minimization reduces unnecessary exposure."
+  },
+  {
+    "id": 8,
+    "category": "Wi-Fi",
+    "question": "On public Wi-Fi, which practice is safer?",
+    "options": [
+      "Use secure HTTPS services and trusted access methods",
+      "Share files openly",
+      "Disable device security",
+      "Use unknown admin portals"
+    ],
+    "correct_index": 0,
+    "explanation": "Use encrypted services and trusted access methods."
+  },
+  {
+    "id": 9,
+    "category": "Mobile Security",
+    "question": "What should you do with unexpected mobile app permission requests?",
+    "options": [
+      "Grant all permissions",
+      "Review whether permissions are necessary",
+      "Disable updates",
+      "Share the device PIN"
+    ],
+    "correct_index": 1,
+    "explanation": "Review permissions and deny unnecessary access."
+  },
+  {
+    "id": 10,
+    "category": "Incident Reporting",
+    "question": "What should you do after a suspected security incident?",
+    "options": [
+      "Hide it",
+      "Report it promptly through the approved channel",
+      "Delete all evidence",
+      "Post it publicly"
+    ],
+    "correct_index": 1,
+    "explanation": "Prompt reporting helps defenders investigate and contain risk."
+  },
+  {
+    "id": 11,
+    "category": "Phishing",
+    "question": "A sender asks for a gift-card payment urgently. What is the safest first step?",
+    "options": [
+      "Pay quickly",
+      "Verify the request through a trusted channel",
+      "Send card details",
+      "Ignore company policy"
+    ],
+    "correct_index": 1,
+    "explanation": "Unexpected payment requests should be independently verified."
+  },
+  {
+    "id": 12,
+    "category": "Passwords",
+    "question": "A password manager is useful because it can:",
+    "options": [
+      "Generate/store unique credentials",
+      "Make phishing safe",
+      "Remove MFA",
+      "Guarantee no breaches"
+    ],
+    "correct_index": 0,
+    "explanation": "Password managers help users maintain unique credentials."
+  },
+  {
+    "id": 13,
+    "category": "MFA",
+    "question": "Which is an example of a phishing-resistant authentication concept?",
+    "options": [
+      "Passkeys/WebAuthn",
+      "Shared passwords",
+      "Security questions only",
+      "Emailing OTPs"
+    ],
+    "correct_index": 0,
+    "explanation": "Passkeys/WebAuthn are designed to resist common phishing techniques."
+  },
+  {
+    "id": 14,
+    "category": "Social Engineering",
+    "question": "Impersonation means:",
+    "options": [
+      "Pretending to be a trusted person or organization",
+      "Encrypting a disk",
+      "Updating software",
+      "Backing up data"
+    ],
+    "correct_index": 0,
+    "explanation": "Impersonation manipulates trust."
+  },
+  {
+    "id": 15,
+    "category": "Safe Browsing",
+    "question": "HTTPS primarily provides:",
+    "options": [
+      "Encrypted transport between browser and site",
+      "Proof that a site is honest",
+      "Malware removal",
+      "A password manager"
+    ],
+    "correct_index": 0,
+    "explanation": "HTTPS protects transport; it does not by itself prove the site's trustworthiness."
+  },
+  {
+    "id": 16,
+    "category": "Ransomware",
+    "question": "Which is a useful preventive control?",
+    "options": [
+      "Least privilege",
+      "Shared admin accounts",
+      "Unpatched systems",
+      "Unknown USBs"
+    ],
+    "correct_index": 0,
+    "explanation": "Least privilege limits unnecessary access."
+  },
+  {
+    "id": 17,
+    "category": "Privacy",
+    "question": "Why should unnecessary personal data be avoided?",
+    "options": [
+      "It reduces potential exposure and impact",
+      "It makes passwords shorter",
+      "It disables logs",
+      "It guarantees anonymity"
+    ],
+    "correct_index": 0,
+    "explanation": "Less unnecessary data means less data to expose or misuse."
+  },
+  {
+    "id": 18,
+    "category": "Wi-Fi",
+    "question": "Why should you avoid unknown open networks for sensitive work?",
+    "options": [
+      "The network may not be trustworthy",
+      "They are always faster",
+      "They guarantee privacy",
+      "They prevent phishing"
+    ],
+    "correct_index": 0,
+    "explanation": "Unknown networks can increase exposure to interception or impersonation risks."
+  },
+  {
+    "id": 19,
+    "category": "Mobile Security",
+    "question": "What is safer for mobile apps?",
+    "options": [
+      "Install from trusted sources and review permissions",
+      "Install random APKs",
+      "Disable updates",
+      "Share account credentials"
+    ],
+    "correct_index": 0,
+    "explanation": "Trusted sources and permission review reduce risk."
+  },
+  {
+    "id": 20,
+    "category": "Incident Reporting",
+    "question": "Why preserve relevant evidence when reporting an incident?",
+    "options": [
+      "It can help investigation and response",
+      "It makes the incident worse",
+      "It bypasses MFA",
+      "It proves attribution"
+    ],
+    "correct_index": 0,
+    "explanation": "Relevant evidence supports investigation."
+  },
+  {
+    "id": 21,
+    "category": "Phishing",
+    "question": "An unexpected QR code asks you to log in. What should you do?",
+    "options": [
+      "Scan immediately",
+      "Verify the request and use a trusted official route",
+      "Enter credentials",
+      "Disable MFA"
+    ],
+    "correct_index": 1,
+    "explanation": "QR codes can hide destinations; verify independently."
+  },
+  {
+    "id": 22,
+    "category": "Passwords",
+    "question": "Which password is generally stronger?",
+    "options": [
+      "A long unique passphrase",
+      "password123",
+      "Your name",
+      "A reused short password"
+    ],
+    "correct_index": 0,
+    "explanation": "Length and uniqueness improve password security."
+  },
+  {
+    "id": 23,
+    "category": "MFA",
+    "question": "What should you do if you receive an unexpected MFA prompt?",
+    "options": [
+      "Approve it",
+      "Deny/report it and investigate",
+      "Share the code",
+      "Disable MFA"
+    ],
+    "correct_index": 1,
+    "explanation": "Unexpected prompts may indicate an attempted authentication event."
+  },
+  {
+    "id": 24,
+    "category": "Social Engineering",
+    "question": "What is pretexting?",
+    "options": [
+      "Creating a fabricated scenario to persuade someone",
+      "Encrypting a file",
+      "Patching software",
+      "Creating a backup"
+    ],
+    "correct_index": 0,
+    "explanation": "Pretexting uses a fabricated story or context."
+  },
+  {
+    "id": 25,
+    "category": "Safe Browsing",
+    "question": "If a website asks for credentials unexpectedly, what is a safer approach?",
+    "options": [
+      "Open the service through a known official bookmark",
+      "Use the provided suspicious link",
+      "Disable browser protection",
+      "Reuse a password"
+    ],
+    "correct_index": 0,
+    "explanation": "A trusted route reduces the chance of credential phishing."
+  },
+  {
+    "id": 26,
+    "category": "Ransomware",
+    "question": "Why is network segmentation useful?",
+    "options": [
+      "It can limit spread between systems",
+      "It increases password reuse",
+      "It disables backups",
+      "It guarantees no incidents"
+    ],
+    "correct_index": 0,
+    "explanation": "Segmentation can reduce lateral impact."
+  },
+  {
+    "id": 27,
+    "category": "Privacy",
+    "question": "Which is a good practice for sensitive documents?",
+    "options": [
+      "Share only with authorized recipients",
+      "Post publicly",
+      "Use personal public links",
+      "Remove all access controls"
+    ],
+    "correct_index": 0,
+    "explanation": "Least-privilege sharing reduces exposure."
+  },
+  {
+    "id": 28,
+    "category": "Wi-Fi",
+    "question": "What should be disabled when not needed on a mobile device?",
+    "options": [
+      "Unneeded wireless discovery features",
+      "Security updates",
+      "Screen lock",
+      "MFA"
+    ],
+    "correct_index": 0,
+    "explanation": "Reducing unnecessary wireless exposure can improve security."
+  },
+  {
+    "id": 29,
+    "category": "Mobile Security",
+    "question": "Why should mobile software be updated?",
+    "options": [
+      "Updates can fix security vulnerabilities",
+      "Updates always add ads",
+      "Updates remove MFA",
+      "Updates expose passwords"
+    ],
+    "correct_index": 0,
+    "explanation": "Security updates often address vulnerabilities."
+  },
+  {
+    "id": 30,
+    "category": "Incident Reporting",
+    "question": "What should you avoid doing during an incident unless instructed by the response team?",
+    "options": [
+      "Taking destructive or evidence-destroying actions",
+      "Reporting promptly",
+      "Recording facts",
+      "Following the response process"
+    ],
+    "correct_index": 0,
+    "explanation": "Uncoordinated destructive actions can hinder investigation and recovery."
+  }
+]
